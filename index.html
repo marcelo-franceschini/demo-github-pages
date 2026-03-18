@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Pages Demo</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Alpine -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+    <div x-data="{ count: 0 }" class="text-center space-y-6">
+
+        <h1 class="text-4xl font-bold">
+            GitHub Pages funcionando 🚀
+        </h1>
+
+        <p class="text-gray-400">
+            Tailwind + Alpine.js direto do CDN
+        </p>
+
+        <div class="space-x-4">
+            <button @click="count++" class="px-4 py-2 bg-blue-600 rounded hover:bg-blue-500">
+                Incrementar
+            </button>
+
+            <span class="text-xl font-mono" x-text="count"></span>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
